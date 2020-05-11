@@ -1,0 +1,232 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+/* start for navigation links*/
+.start{
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(Surface.jpg);
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;
+	opacity: 1.2s;
+}
+.container {
+	max-width: 1100px;
+	margin: auto;
+}
+.text-primary{
+	color: rgb(194, 68, 68);
+}
+.showcase {
+	background-image:url('Workroom.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 20px;
+}
+.showcase p{
+	font-size: 20px;
+	text-align: center;
+	color: #926239;
+	font-family:Verdana, Geneva, Tahoma, sans-serif ;
+	padding: 20px;
+}
+.showcase .button{
+	font-size: 15px;
+	text-decoration: none;
+	color: #92633942;
+	border: #926239 1px solid;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin: 20px;
+}
+.showcase .button:hover{
+	background: #926239;
+	color: #fff;
+}
+.nav_bar{
+	display: flex;
+	padding: 40px 120px;
+	justify-content: space-between;
+}
+.nav_logo h2{
+	text-align: center;
+	font-size: 40px;
+}
+.nav_logo h2 a{
+	color: #fff;
+	text-decoration: none;
+}
+.nav_logo img{
+width: 200px;
+height: 200px;
+border-radius: 100px;
+align-items: center;
+margin-left: 45%;
+margin-right: 45%;
+}
+.nav_links{
+	flex: 1;
+}
+.nav_links ul{
+	margin-left: 50px;
+	display: inline-block;
+	align-items: center;
+	list-style: none;
+}
+
+.nav_links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 25px;
+}
+.nav_links ul a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+	position: relative;
+	padding: 16px;
+	margin: 0 0.5rem;
+	border-radius: 5px;
+}
+.nav_links ul li::after{
+	content: '';
+	width: 0;
+	height: 2px;
+	background: wheat;
+	display: block;
+	margin: auto;
+}
+.nav_links ul li:hover::after{
+	width: 100%;
+}
+
+/* Contact section */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+	padding: 0 3rem;
+	background: #926239;
+}
+
+.contact-section-header > h2 {
+  font-size: 2rem;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+	flex-wrap: wrap;
+	color: #1f1f1f;
+	align-items: center;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+/* Portfolio */
+.portfolio{
+	padding: 5% 10%;
+	text-align: center;
+	background: #f5f5f5;
+}
+.portfolio_wrapper .portfolio{
+display: flex;
+justify-content: space-between;
+}
+.portfolio_wrapper .portfolio-1.portfolio{
+	margin-bottom: 25px;
+}
+.portfolio_wrapper .portfolio_members{
+	width: 30%;
+	height: auto;
+	cursor: pointer;
+	overflow: hidden;
+}
+.portfolio h1{
+	font-size: 50px;
+	font-style: oblique;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color:chocolate;
+	height: 80px;
+	display: inline-block;
+}
+.portfolio_wrapper .portfolio_members h3{
+	font-size: 20px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+}
+.portfolio_wrapper .portfolio_members a{
+	color: midnightblue;
+}
+.portfolio_wrapper .portfolio_members img{
+	width: 100%;
+	display: block;
+	height: 70%;
+	transition: all 0.5s ease;
+}
+.portfolio_wrapper .portfolio_members:hover img{
+	transform: scale(1.1);
+}
+@media(max-width: 700px){
+	.nav_bar{
+		height: auto;
+		flex-direction: column;
+	}
+	.nav_bar ul{
+		flex-direction: column;
+		text-align: center;
+	}
+	.nav_bar ul li{
+		margin-bottom: 5px;
+		display: block;
+	}
+	.nav_links{
+		height: 100vh;
+		width: 200px;
+		background: #000;
+		top: 0;
+		right: 0;
+	}
+	.nav_links ul a{
+		display: block;
+	}
+	.nav_links .btn{
+		float: none;
+		margin-left: 30px;
+		margin-top: 10px;
+	}
+	.nav_logo img{
+		margin-bottom: 5px;
+	}
+}
