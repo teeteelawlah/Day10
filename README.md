@@ -1,2 +1,2 @@
 # DayTen
-https://teeteelawlah.github.io/Day10/
+https://teeteelawlah.github.io/Portfolio/
